@@ -1,0 +1,13 @@
+.type-flex-container
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-left:20%;
+    padding-right:20%;
+    background-color: lightgray;
+}
+.type-flex-item
+{
+ flex-basis: 15%;
+}
