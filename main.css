@@ -1,13 +1,47 @@
 .type-flex-container
 {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     width: 60%;
     padding-left:20%;
     padding-right:20%;
     background-color: lightgray;
+    position: relative;;
 }
 .type-flex-item
 {
  flex-basis: 15%;
 }
+
+button
+{
+    background-color: lightgray;
+    width: 100%;
+    height:100%;
+}
+.select-box
+{
+   display: none;
+    overflow-y: scroll;
+    height: 400%;
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+   
+}
+.option-item
+{
+    display: block;
+    text-align: center;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+
+}
+
+button .button-text-on-hover{ display: none; }
+.type-flex-item:hover .button-text { display: none; }
+.type-flex-item .select-box{display:none}
+.type-flex-item:hover .select-box{display:block;}
+.type-flex-item:hover .button-text-on-hover{display: inline;}
+.type-flex-item:hover button{border:solid blue; color:blue;}
